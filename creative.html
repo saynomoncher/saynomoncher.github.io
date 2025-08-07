@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Visions - Retro Vibes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Creative page specific styling */
+    body {
+      background: radial-gradient(circle at center, var(--retro-purple), var(--retro-burgundy));
+      min-height: 100vh;
+      color: #fff;
+    }
+    
+    .creative-hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: rgba(0,0,0,0.3);
+      margin-bottom: 2rem;
+    }
+    
+    .creative-hero h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 5rem;
+      color: var(--retro-orange);
+      text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+      margin-bottom: 1rem;
+      letter-spacing: 3px;
+    }
+    
+    .creative-hero p {
+      font-size: 1.4rem;
+      font-style: italic;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .visions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .vision-card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 2rem;
+      border: 2px solid rgba(255,255,255,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .vision-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    
+    .vision-card h3 {
+      font-family: 'Impact', sans-serif;
+      color: var(--retro-orange);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .wine-inspired {
+      background: linear-gradient(135deg, var(--retro-burgundy), #4a0e4e);
+      color: #fff;
+      padding: 3rem 2rem;
+      margin: 2rem 0;
+      border-radius: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .wine-inspired::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+      background-size: 30px 30px;
+      animation: float 20s linear infinite;
+    }
+    
+    @keyframes float {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+    
+    .wine-inspired h2 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 3.5rem;
+      color: var(--retro-orange);
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .psychic-section {
+      background: rgba(0,0,0,0.4);
+      padding: 3rem 2rem;
+      margin: 2rem 0;
+      border-radius: 15px;
+      text-align: center;
+    }
+    
+    .psychic-text {
+      font-family: 'Georgia', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      line-height: 1.8;
+      color: var(--retro-teal);
+      margin-bottom: 2rem;
+    }
+    
+    .creative-elements {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .element {
+      text-align: center;
+      flex: 1;
+      min-width: 150px;
+    }
+    
+    .element-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--retro-orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    
+    @media (max-width: 768px) {
+      .creative-hero h1 {
+        font-size: 3rem;
+      }
+      
+      .wine-inspired h2 {
+        font-size: 2.5rem;
+      }
+      
+      .creative-elements {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="magazine.html">Magazine</a></li>
+      <li><a href="creative.html" class="active">Creative</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="monthly.html">Monthly</a></li>
+    </ul>
+  </nav>
+
+  <header class="creative-hero">
+    <h1>Creative Visions</h1>
+    <p>Exploring the intersection of art, design, and psychedelic inspiration</p>
+  </header>
+
+  <div class="visions-grid">
+    <div class="vision-card">
+      <h3>Artistic Flow</h3>
+      <p>Like wine flowing through crystal, creative ideas move through the mind in mysterious ways, leaving traces of inspiration that transform into visual poetry.</p>
+    </div>
+    
+    <div class="vision-card">
+      <h3>Color Dreams</h3>
+      <p>Psychedelic palettes meet retro sensibilities, creating a visual language that speaks to both the past and the future simultaneously.</p>
+    </div>
+    
+    <div class="vision-card">
+      <h3>Organic Design</h3>
+      <p>Nature-inspired forms blend with geometric precision, creating designs that feel both structured and free-flowing.</p>
+    </div>
+  </div>
+
+  <section class="wine-inspired">
+    <h2>Visions Vol. 66</h2>
+    <p>In the spirit of Psychic Wines' visionary publication, we explore the depths of creative consciousness where design meets intuition, and every color choice becomes a journey into the sublime.</p>
+  </section>
+
+  <section class="psychic-section">
+    <p class="psychic-text">
+      "The best designs are not just seen—they are felt. They resonate with something deeper than the eye can perceive, touching the soul through carefully orchestrated visual harmony."
+    </p>
+    
+    <div class="creative-elements">
+      <div class="element">
+        <div class="element-icon">∞</div>
+        <h4>Infinite Possibility</h4>
+        <p>Every design choice opens infinite paths of creative expression.</p>
+      </div>
+      
+      <div class="element">
+        <div class="element-icon">◊</div>
+        <h4>Crystalline Clarity</h4>
+        <p>Clear vision emerges from the chaos of unlimited options.</p>
+      </div>
+      
+      <div class="element">
+        <div class="element-icon">☯</div>
+        <h4>Balanced Flow</h4>
+        <p>Harmony between opposing forces creates visual tension.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container text-center">
+    <a href="journal.html" class="btn">Literary Journal</a>
+    <a href="magazine.html" class="btn">Magazine Style</a>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+
+  <footer>© 2025 Saynomoncher. Creative Visions & Artistic Expression.</footer>
+</body>
+</html>

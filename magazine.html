@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Style - Retro Vibes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Magazine layout specific styling */
+    body {
+      background-color: #fff;
+      min-height: 100vh;
+    }
+    
+    .magazine-header {
+      background: linear-gradient(45deg, var(--retro-orange), var(--retro-burgundy));
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .magazine-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+      opacity: 0.3;
+    }
+    
+    .magazine-title {
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      font-size: 4rem;
+      letter-spacing: 6px;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .issue-info {
+      font-size: 1.2rem;
+      font-style: italic;
+      opacity: 0.9;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .magazine-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .featured-article {
+      background: linear-gradient(135deg, var(--retro-teal), var(--retro-purple));
+      color: #fff;
+      padding: 3rem;
+      border-radius: 15px;
+      position: relative;
+    }
+    
+    .featured-article h2 {
+      font-family: 'Impact', sans-serif;
+      font-size: 3rem;
+      letter-spacing: 3px;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .featured-article p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .sidebar-item {
+      background: var(--retro-bg);
+      padding: 1.5rem;
+      border-radius: 10px;
+      border-left: 5px solid var(--retro-orange);
+    }
+    
+    .sidebar-item h3 {
+      font-family: 'Impact', sans-serif;
+      color: var(--retro-secondary);
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+    
+    .quote-box {
+      background: var(--retro-secondary);
+      color: #fff;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 10px;
+      font-style: italic;
+      font-size: 1.3rem;
+      text-align: center;
+      position: relative;
+    }
+    
+    .quote-box::before {
+      content: '"';
+      font-size: 6rem;
+      position: absolute;
+      top: -1rem;
+      left: 1rem;
+      opacity: 0.3;
+      font-family: serif;
+    }
+    
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 5px;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    
+    .tag {
+      background: var(--retro-orange);
+      color: #fff;
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    
+    @media (max-width: 768px) {
+      .magazine-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+      
+      .magazine-title {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+      }
+      
+      .featured-article h2 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="magazine.html" class="active">Magazine</a></li>
+      <li><a href="creative.html">Creative</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="monthly.html">Monthly</a></li>
+    </ul>
+  </nav>
+
+  <header class="magazine-header">
+    <h1 class="magazine-title">TIDAL DESIGN</h1>
+    <p class="issue-info">Issue 20 • Retro Revival Edition • 2025</p>
+  </header>
+
+  <div class="magazine-grid">
+    <article class="featured-article">
+      <h2>THE RETURN OF BOLD</h2>
+      <p>Magazine design is experiencing a renaissance of bold typography and vibrant color schemes. From underground publications to mainstream media, designers are embracing the fearless aesthetic that defined the golden age of print.</p>
+      
+      <p>This movement draws inspiration from iconic publications of the past, where every page was an opportunity to make a statement. The typography doesn't just convey information—it becomes art itself.</p>
+      
+      <div class="article-meta">
+        <span>By Design Team</span>
+        <span class="tag">Design</span>
+      </div>
+    </article>
+
+    <aside class="sidebar">
+      <div class="sidebar-item">
+        <h3>Color Psychology</h3>
+        <p>How retro color palettes evoke nostalgia and create emotional connections with readers.</p>
+      </div>
+      
+      <div class="sidebar-item">
+        <h3>Typography Trends</h3>
+        <p>From Marlfield-inspired serifs to impact-heavy sans-serifs, exploring the fonts driving modern design.</p>
+      </div>
+      
+      <div class="sidebar-item">
+        <h3>Layout Innovation</h3>
+        <p>Breaking traditional grid systems while maintaining readability and visual hierarchy.</p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="quote-box">
+    Typography in magazines isn't just about legibility—it's about creating an experience that resonates long after the page is turned.
+  </div>
+
+  <div class="container text-center">
+    <a href="creative.html" class="btn">Explore Creative Arts</a>
+    <a href="typography.html" class="btn">Bold Typography</a>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+
+  <footer>© 2025 Saynomoncher. Magazine Design & Visual Storytelling.</footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* Shared Retro Styling for saynomoncher.github.io */
+
+/* General Reset */
+body, h1, h2, h3, p, nav, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2c2c2c; /* Deep gray text */
+}
+
+/* Common Retro Color Palette */
+:root {
+  --retro-bg: #ffefd5; /* Pale golden background */
+  --retro-primary: #d2691e; /* Chocolate brown */
+  --retro-secondary: #8b4513; /* Saddle brown */
+  --retro-accent: #a0522d; /* Light saddle brown */
+  --retro-text: #2c2c2c; /* Deep gray */
+  --retro-muted: #696969; /* Dim gray */
+  --retro-light: #a9a9a9; /* Dark gray */
+  
+  /* Additional retro colors inspired by design references */
+  --retro-orange: #ff6347; /* Tomato */
+  --retro-burgundy: #800020; /* Burgundy */
+  --retro-olive: #6b8e23; /* Olive drab */
+  --retro-teal: #20b2aa; /* Light sea green */
+  --retro-purple: #663399; /* Rebecca purple variant */
+}
+
+/* Navigation Styling */
+nav {
+  background-color: var(--retro-secondary);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--retro-bg);
+}
+
+nav a.active {
+  color: var(--retro-orange);
+  border-bottom: 2px solid var(--retro-orange);
+  padding-bottom: 2px;
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  font-family: 'Courier New', monospace;
+  color: var(--retro-primary);
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  color: var(--retro-secondary);
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: 'Georgia', serif;
+  color: var(--retro-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Button Styling */
+.button, .btn {
+  background-color: var(--retro-secondary);
+  color: #fff;
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.button:hover, .btn:hover {
+  background-color: var(--retro-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Container and Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: var(--retro-secondary);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  nav ul {
+    gap: 1rem;
+  }
+  
+  nav a {
+    font-size: 0.9rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bold Typography - Retro Vibes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Typography page specific styling */
+    body {
+      background: linear-gradient(135deg, var(--retro-bg) 0%, #f4e4b8 100%);
+      min-height: 100vh;
+    }
+    
+    .typography-hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: var(--retro-burgundy);
+      color: #fff;
+      margin-bottom: 3rem;
+    }
+    
+    .typography-hero h1 {
+      font-size: 5rem;
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      color: var(--retro-orange);
+      letter-spacing: 8px;
+      text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+      margin-bottom: 1rem;
+    }
+    
+    .typography-hero p {
+      font-size: 1.4rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+    
+    .font-showcase {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    
+    .font-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    
+    .marlfield-style {
+      font-family: 'Georgia', serif;
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--retro-primary);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    
+    .display-style {
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      font-size: 2.5rem;
+      color: var(--retro-purple);
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .script-style {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 3.5rem;
+      color: var(--retro-teal);
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    
+    .mono-style {
+      font-family: 'Courier New', monospace;
+      font-size: 2rem;
+      color: var(--retro-olive);
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+    
+    .experimental-text {
+      background: var(--retro-secondary);
+      color: #fff;
+      padding: 3rem 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .experimental-text h2 {
+      font-size: 4rem;
+      font-family: 'Impact', sans-serif;
+      transform: rotate(-2deg);
+      letter-spacing: 6px;
+      margin-bottom: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      .typography-hero h1 {
+        font-size: 3rem;
+        letter-spacing: 4px;
+      }
+      
+      .marlfield-style {
+        font-size: 2rem;
+        letter-spacing: 2px;
+      }
+      
+      .experimental-text h2 {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="typography.html" class="active">Typography</a></li>
+      <li><a href="magazine.html">Magazine</a></li>
+      <li><a href="creative.html">Creative</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="monthly.html">Monthly</a></li>
+    </ul>
+  </nav>
+
+  <div class="typography-hero">
+    <h1>BOLD TYPE</h1>
+    <p>Exploring the power of expressive typography in retro design</p>
+  </div>
+
+  <div class="container">
+    <div class="font-showcase">
+      <div class="font-card">
+        <div class="marlfield-style">DISPLAY</div>
+        <h3>Marlfield Inspired</h3>
+        <p>Bold serif typography with strong presence and classical elegance, perfect for headlines and branding.</p>
+      </div>
+      
+      <div class="font-card">
+        <div class="display-style">IMPACT</div>
+        <h3>Magazine Headlines</h3>
+        <p>Condensed sans-serif with maximum visual impact, ideal for attention-grabbing magazine titles.</p>
+      </div>
+      
+      <div class="font-card">
+        <div class="script-style">Artistic</div>
+        <h3>Creative Expression</h3>
+        <p>Flowing script typography that adds personality and creative flair to artistic publications.</p>
+      </div>
+      
+      <div class="font-card">
+        <div class="mono-style">CODE</div>
+        <h3>Monospace Power</h3>
+        <p>Fixed-width typography with technical precision and retro computing aesthetics.</p>
+      </div>
+    </div>
+    
+    <div class="experimental-text">
+      <h2>EXPERIMENTAL</h2>
+      <p>Typography is not just about legibility—it's about emotion, personality, and making a bold statement that resonates with your audience.</p>
+    </div>
+    
+    <div class="text-center">
+      <a href="magazine.html" class="btn">Explore Magazine Design</a>
+      <a href="index.html" class="btn">Back to Home</a>
+    </div>
+  </div>
+
+  <footer>© 2025 Saynomoncher. Typography & Design Explorations.</footer>
+</body>
+</html>

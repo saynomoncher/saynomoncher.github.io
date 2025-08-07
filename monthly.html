@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Monthly - Retro Vibes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Monthly publication styling inspired by The Monthly and French magazines */
+    body {
+      background: #f5f5f5;
+      min-height: 100vh;
+      font-family: 'Georgia', serif;
+    }
+    
+    .monthly-masthead {
+      background: var(--retro-secondary);
+      color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    
+    .monthly-masthead h1 {
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      font-size: 4.5rem;
+      color: #fff;
+      letter-spacing: 8px;
+      margin-bottom: 0.5rem;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    }
+    
+    .french-subtitle {
+      font-size: 1.2rem;
+      font-style: italic;
+      opacity: 0.9;
+      color: var(--retro-bg);
+      letter-spacing: 2px;
+    }
+    
+    .date-banner {
+      background: var(--retro-orange);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    
+    .monthly-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+    
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .feature-story {
+      background: #fff;
+      padding: 3rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      border-top: 6px solid var(--retro-burgundy);
+    }
+    
+    .feature-story h2 {
+      font-family: 'Impact', sans-serif;
+      font-size: 3rem;
+      color: var(--retro-burgundy);
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+      line-height: 1.1;
+    }
+    
+    .story-lead {
+      font-size: 1.3rem;
+      color: var(--retro-secondary);
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+    
+    .story-text {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--retro-text);
+      margin-bottom: 1.5rem;
+      columns: 2;
+      column-gap: 2rem;
+      text-align: justify;
+    }
+    
+    .french-section {
+      background: linear-gradient(135deg, var(--retro-olive), var(--retro-teal));
+      color: #fff;
+      padding: 2.5rem;
+      border-radius: 15px;
+      margin: 2rem 0;
+    }
+    
+    .french-section h3 {
+      font-family: 'Georgia', serif;
+      font-size: 2.2rem;
+      color: #fff;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    
+    .comprehension-box {
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    
+    .monthly-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .sidebar-section {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    
+    .sidebar-section h4 {
+      color: var(--retro-burgundy);
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-family: 'Impact', sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    .sidebar-section p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--retro-text);
+    }
+    
+    .this-month {
+      background: var(--retro-orange);
+      color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+    
+    .this-month h4 {
+      color: #fff;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+    
+    .monthly-stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    
+    .stat {
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+      font-weight: bold;
+      display: block;
+    }
+    
+    .time-banner {
+      background: var(--retro-purple);
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 15px;
+      font-family: 'Impact', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+    
+    @media (max-width: 968px) {
+      .monthly-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1rem;
+      }
+      
+      .monthly-masthead h1 {
+        font-size: 3rem;
+        letter-spacing: 4px;
+      }
+      
+      .story-text {
+        columns: 1;
+      }
+      
+      .feature-story h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="magazine.html">Magazine</a></li>
+      <li><a href="creative.html">Creative</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="monthly.html" class="active">Monthly</a></li>
+    </ul>
+  </nav>
+
+  <header class="monthly-masthead">
+    <h1>THE MONTHLY</h1>
+    <p class="french-subtitle">Comprendre Son Temps • Understanding Our Time</p>
+  </header>
+
+  <div class="date-banner">
+    January 2025 • Issue N°1 • New Retro Era
+  </div>
+
+  <div class="monthly-grid">
+    <main class="main-content">
+      <article class="feature-story">
+        <h2>DESIGN REVOLUTION</h2>
+        <p class="story-lead">How retro aesthetics are reshaping modern digital experiences and bringing warmth back to our screens.</p>
+        
+        <div class="story-text">
+          The design world is experiencing a profound shift toward the tactile, the warm, and the human. As our digital lives become increasingly sterile, designers are turning to the past for inspiration, finding in retro aesthetics the emotional resonance that modern minimalism has stripped away. This isn't mere nostalgia—it's a conscious choice to prioritize feeling over function, warmth over efficiency.
+          
+          Publications like The Monthly have always understood this balance. The careful choice of typography, the considered use of color, the way white space breathes around content—these decisions create an experience that goes beyond mere information consumption. They create a moment of pause in our rushed digital lives.
+        </div>
+      </article>
+
+      <section class="french-section">
+        <h3>Comprendre Son Temps</h3>
+        <p>In the spirit of French intellectual publications, we examine how design philosophy reflects our cultural moment. The return to bold typography and vibrant colors isn't just aesthetic—it's ideological.</p>
+        
+        <div class="comprehension-box">
+          "To understand our time, we must look at how we choose to present information. Our design choices reveal our values, our priorities, and our deepest aspirations for human connection."
+        </div>
+      </section>
+
+      <div class="time-banner">
+        UNDERSTANDING OUR VISUAL ZEITGEIST
+      </div>
+    </main>
+
+    <aside class="monthly-sidebar">
+      <div class="this-month">
+        <h4>This Month</h4>
+        <div class="monthly-stats">
+          <div class="stat">
+            <span class="stat-number">42</span>
+            <span>Articles</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">6</span>
+            <span>Features</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">128</span>
+            <span>Pages</span>
+          </div>
+        </div>
+        <p>Exploring the intersection of retro design and contemporary culture.</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>In This Issue</h4>
+        <p>Typography Renaissance • Color Psychology • Magazine Evolution • Digital Nostalgia • French Design Philosophy</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>Next Month</h4>
+        <p>We'll explore how retro gaming aesthetics are influencing modern UX design, plus an interview with leading typography designers about the future of bold type.</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>Reader's Corner</h4>
+        <p>"The Monthly perfectly captures the mood of our design renaissance. Every page feels like a thoughtful conversation about aesthetics and meaning." - Design Reader</p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="container text-center">
+    <a href="typography.html" class="btn">Typography Focus</a>
+    <a href="journal.html" class="btn">Literary Journal</a>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+
+  <footer>© 2025 Saynomoncher. The Monthly • Design & Culture.</footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Literary Journal - Retro Vibes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Journal page specific styling inspired by Columbia Journal */
+    body {
+      background: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
+      min-height: 100vh;
+      font-family: 'Georgia', serif;
+    }
+    
+    .journal-header {
+      background: linear-gradient(135deg, var(--retro-olive), var(--retro-teal));
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    
+    .journal-header h1 {
+      font-family: 'Georgia', serif;
+      font-size: 4rem;
+      color: #fff;
+      letter-spacing: 3px;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .journal-subtitle {
+      font-size: 1.3rem;
+      font-style: italic;
+      opacity: 0.9;
+      letter-spacing: 1px;
+    }
+    
+    .journal-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+    
+    .article-header {
+      border-bottom: 3px solid var(--retro-teal);
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .article-header h2 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5rem;
+      color: var(--retro-olive);
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    
+    .byline {
+      color: var(--retro-muted);
+      font-style: italic;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      color: var(--retro-muted);
+      margin-bottom: 2rem;
+    }
+    
+    .journal-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--retro-text);
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+    
+    .journal-text:first-letter {
+      float: left;
+      font-size: 4rem;
+      line-height: 3rem;
+      padding-right: 8px;
+      padding-top: 4px;
+      font-weight: bold;
+      color: var(--retro-olive);
+      font-family: 'Georgia', serif;
+    }
+    
+    .pull-quote {
+      background: var(--retro-bg);
+      border-left: 5px solid var(--retro-teal);
+      padding: 2rem;
+      margin: 2rem 0;
+      font-size: 1.4rem;
+      font-style: italic;
+      color: var(--retro-olive);
+      text-align: center;
+      border-radius: 0 10px 10px 0;
+    }
+    
+    .columbia-colors {
+      background: linear-gradient(90deg, var(--retro-teal), var(--retro-olive), var(--retro-purple));
+      height: 10px;
+      margin: 2rem 0;
+      border-radius: 5px;
+    }
+    
+    .literary-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .poetry-section {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-top: 4px solid var(--retro-olive);
+    }
+    
+    .poetry-section h3 {
+      color: var(--retro-olive);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-family: 'Georgia', serif;
+    }
+    
+    .poem {
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--retro-text);
+      margin-bottom: 1rem;
+    }
+    
+    .sidebar-journal {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .journal-note {
+      background: var(--retro-teal);
+      color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      font-size: 0.95rem;
+    }
+    
+    .journal-note h4 {
+      color: #fff;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    
+    .issue-info-box {
+      background: var(--retro-olive);
+      color: #fff;
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    
+    @media (max-width: 768px) {
+      .journal-header h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+      }
+      
+      .literary-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .journal-content {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="magazine.html">Magazine</a></li>
+      <li><a href="creative.html">Creative</a></li>
+      <li><a href="journal.html" class="active">Journal</a></li>
+      <li><a href="monthly.html">Monthly</a></li>
+    </ul>
+  </nav>
+
+  <header class="journal-header">
+    <h1>COLUMBIA REVIEW</h1>
+    <p class="journal-subtitle">A Journal of Literature and Art • Retro Edition</p>
+  </header>
+
+  <div class="columbia-colors"></div>
+
+  <main class="journal-content">
+    <article class="article-header">
+      <h2>The Resurgence of Literary Design</h2>
+      <p class="byline">By Editorial Team</p>
+      <div class="article-meta">
+        <span>Issue 42 • Spring 2025</span>
+        <span>Literary Arts</span>
+      </div>
+    </article>
+
+    <p class="journal-text">
+      Literature and design have always been intertwined, but never more so than in our current retro renaissance. The pages of literary journals are becoming canvases for artistic expression, where typography serves not just communication but aesthetic purpose.
+    </p>
+
+    <p class="journal-text">
+      The color palette we've chosen for this publication draws inspiration from the natural world—olive greens that speak of wisdom and growth, teals that flow like literary rivers, and purples that hint at the mysterious depths of creative consciousness.
+    </p>
+
+    <div class="pull-quote">
+      "In every well-designed page lies the potential for both meaning and beauty to flourish together."
+    </div>
+
+    <p class="journal-text">
+      This philosophy extends beyond mere aesthetics. When readers encounter a thoughtfully designed literary work, they experience the content differently. The visual presentation becomes part of the narrative itself, guiding the reader's emotional journey through carefully chosen colors and typography.
+    </p>
+
+    <div class="literary-grid">
+      <div class="poetry-section">
+        <h3>Featured Poetry</h3>
+        <div class="poem">
+          Colors blend like memories,<br>
+          Olive wisdom meets teal dreams,<br>
+          Purple shadows dance between<br>
+          The lines of what we've seen.
+        </div>
+        <div class="poem">
+          Retro echoes in modern halls,<br>
+          Typography tells stories<br>
+          Beyond the words it calls.
+        </div>
+      </div>
+
+      <div class="sidebar-journal">
+        <div class="journal-note">
+          <h4>Editor's Note</h4>
+          <p>This issue explores how visual design enhances literary experience, drawing from classic publications that understood the power of aesthetic harmony.</p>
+        </div>
+        
+        <div class="journal-note">
+          <h4>Color Theory</h4>
+          <p>Our palette reflects the Columbia Journal tradition of using nature-inspired hues to create calming, intellectual reading environments.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="issue-info-box">
+      <h3>About This Issue</h3>
+      <p>Celebrating the intersection of literary content and visual design, featuring contributions from writers, artists, and designers who understand that beautiful typography serves the noble purpose of making great writing more accessible and engaging.</p>
+    </div>
+  </main>
+
+  <div class="container text-center">
+    <a href="monthly.html" class="btn">Monthly Publication</a>
+    <a href="creative.html" class="btn">Creative Visions</a>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+
+  <footer>© 2025 Saynomoncher. Literature & Design in Harmony.</footer>
+</body>
+</html>

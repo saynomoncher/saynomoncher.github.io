@@ -1,1 +1,68 @@
-<!DOCTYPE html> <html lang="en"> <head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>Retro 70s Minimalist</title>   <style>     /* General Reset */     body, h1, p {       margin: 0;       padding: 0;     }     body {       background-color: #ffefd5; /* Pale golden background */       color: #2c2c2c; /* Deep gray text for contrast */       font-family: 'Arial', sans-serif;       font-size: 16px;       line-height: 1.6;       display: flex;       flex-direction: column;       align-items: center;       justify-content: center;       height: 100vh;       overflow: hidden;       text-align: center;     }     h1 {       font-size: 3rem;       font-family: 'Courier New', monospace; /* Retro font style */       color: #d2691e; /* Chocolate brown */       letter-spacing: 5px;       margin-bottom: 20px;     }     p {       font-size: 1.1rem;       color: #696969; /* Dim gray */       max-width: 600px;     }     .button {       background-color: #8b4513; /* Saddle brown */       color: #fff;       padding: 10px 20px;       margin-top: 20px;       border: none;       border-radius: 5px;       font-size: 1rem;       cursor: pointer;       transition: background-color 0.3s;     }     .button:hover {       background-color: #a0522d; /* Slightly lighter brown */     }     footer {       position: absolute;       bottom: 10px;       font-size: 0.8rem;       color: #a9a9a9; /* Dark gray */     }   </style> </head> <body>   <h1>RETRO VIBES</h1>   <p>Welcome to the 70s-inspired minimalist site. Bold colors, clean design, and vintage vibes bring the past to life!</p>   <button class="button">Explore More</button>   <footer>© 2025 Saynomoncher. All Rights Reserved.</footer> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Vibes - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Page-specific styling */
+    body {
+      background-color: var(--retro-bg);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--retro-muted);
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+    
+    .explore-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="magazine.html">Magazine</a></li>
+      <li><a href="creative.html">Creative</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="monthly.html">Monthly</a></li>
+    </ul>
+  </nav>
+
+  <main class="hero">
+    <h1>RETRO VIBES</h1>
+    <p>Welcome to the 70s-inspired minimalist site. Bold colors, clean design, and vintage vibes bring the past to life!</p>
+    
+    <div class="explore-buttons">
+      <a href="typography.html" class="btn">Bold Typography</a>
+      <a href="magazine.html" class="btn">Magazine Style</a>
+      <a href="creative.html" class="btn">Creative Arts</a>
+    </div>
+  </main>
+
+  <footer>© 2025 Saynomoncher. All Rights Reserved.</footer>
+</body>
+</html>

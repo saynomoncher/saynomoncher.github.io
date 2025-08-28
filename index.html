@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A retro 70s-inspired minimalist website featuring bold colors, clean design, and vintage vibes that bring the past to life." />
+    <meta property="og:title" content="RETRO VIBES - 70s Minimalist" />
+    <meta property="og:description" content="Welcome to the 70s-inspired minimalist site. Bold colors, clean design, and vintage vibes bring the past to life!" />
+    <meta property="og:type" content="website" />
     <title>Retro 70s Minimalist</title>
     <style>
       /* General Reset */
@@ -59,6 +63,19 @@
         color: #a9a9a9; /* Dark gray */
       }
     </style>
+    <script>
+      function exploreMore() {
+        const messages = [
+          "✨ The 70s never went out of style!",
+          "🌻 Peace, love, and groovy vibes!",
+          "🎵 Can you feel the retro rhythm?",
+          "🌈 Welcome to the golden era of design!",
+          "🕺 Keep on groovin'!"
+        ];
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+        alert(randomMessage);
+      }
+    </script>
   </head>
   <body>
     <h1>RETRO VIBES</h1>
@@ -66,7 +83,7 @@
       Welcome to the 70s-inspired minimalist site. Bold colors, clean design,
       and vintage vibes bring the past to life!
     </p>
-    <button class="button">Explore More</button>
+    <button class="button" onclick="exploreMore()">Explore More</button>
     <footer>© 2025 Saynomoncher. All Rights Reserved.</footer>
   </body>
 </html>
